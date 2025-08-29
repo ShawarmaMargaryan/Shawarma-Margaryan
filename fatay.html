@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shawarma Margaryan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fdfbf7; --pri:#b12b2b; --pri-dark:#911f1f;
+    --ink:#2b2b2b; --card:#fff; --mut:#666; --line:#eee;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.5;padding-bottom:80px;
+  }
+
+  /* HEADER */
+  header{
+    background:var(--card);
+    position:sticky;top:0;z-index:10;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+  }
+  .wrap{max-width:1100px;margin:auto;padding:16px}
+  .brand{display:flex;gap:14px;align-items:center}
+  .logo{width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+  .logo img{width:100%;height:100%;object-fit:cover}
+  h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--pri);font-weight:700}
+  .sub{font-size:13px;color:var(--mut);margin-top:4px}
+
+  /* CATEGORY TITLE */
+  .cat-title {
+    margin-top:40px;
+    font-size:22px;
+    font-weight:700;
+    color:var(--pri);
+    border-bottom:2px solid var(--pri);
+    padding-bottom:6px;
+  }
+
+  /* GRID */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;margin-top:20px;
+  }
+
+  /* CARD */
+  .card{
+    background:var(--card);
+    border-radius:18px;
+    padding:18px;
+    display:flex;flex-direction:column;gap:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+    transition:.3s ease;
+    border:1px solid var(--line);
+    text-align:center;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+  .card img{
+    width:100%;border-radius:14px;max-height:180px;object-fit:cover;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    transition:.3s;
+  }
+  .card img:hover{transform:scale(1.03)}
+  .name{font-weight:600;font-size:16px}
+  .price{color:var(--pri);font-weight:600;font-size:15px}
+
+  /* QTY */
+  .qty{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:6px}
+  .qty button{
+    border:0;background:var(--pri);color:#fff;
+    border-radius:10px;padding:6px 12px;font-size:16px;cursor:pointer;
+    transition:.2s;font-weight:600;
+  }
+  .qty button:hover{background:var(--pri-dark)}
+  .qty input{
+    width:48px;text-align:center;border:1px solid #ddd;border-radius:10px;
+    padding:6px;font-size:15px;font-weight:600;
+  }
+
+  /* SPECIAL SINGLE ITEM */
+  .card.single img {
+    max-height: 300px;
+    object-fit: contain;
+    background:#fafafa;
+    padding:10px;
+  }
+
+  /* CART BAR */
+  .cart-bar{
+    position:fixed;bottom:0;left:0;right:0;
+    background:var(--pri);color:#fff;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 20px;font-size:18px;font-weight:600;
+    box-shadow:0 -3px 12px rgba(0,0,0,.25);
+  }
+  .cart-bar span{display:flex;align-items:center;gap:8px}
+  .cart-bar button{
+    background:#fff;color:var(--pri);border:0;
+    padding:12px 20px;border-radius:12px;font-weight:700;
+    cursor:pointer;font-size:16px;transition:.3s;
+  }
+  .cart-bar button:hover{background:#f5f5f5;transform:scale(1.05)}
+
+  /* ICON */
+  .cart-icon{font-size:20px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap brand">
+    <div class="logo"><img src="https://images.rappi.com.ar/restaurants_logo/123-1738620610744.png" alt="Logo Shawarma Margaryan"></div>
+    <div>
+      <h1>SHAWARMA MARGARYAN</h1>
+      <div class="sub">Cocina Armenia y Medio Oriente · Lun a Sáb 11:00–22:30 · J.L. Borges 2307, Palermo · <b>1150360400</b></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Shawarma -->
+  <h2 class="cat-title">Shawarma</h2>
+  <div class="grid">
+    <div class="card"><img src="https://thumbs.dreamstime.com/b/shawarma-de-ternera-en-un-fondo-oscuro-con-carne-vacuno-pan-pita-foto-del-men%C3%BA-255481305.jpg"><span class="name">De carne</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_carne" data-price="10000"></div></div>
+    <div class="card"><img src="https://www.durum.com.ar/wp-content/uploads/2019/09/L-Pollo-400G-Grande-e1570821714365.jpg"><span class="name">De pollo</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_pollo" data-price="10000"></div></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkFvJ9mq8EBoIt1EfXnFw1SkLBaKXylaaEw&s"><span class="name">Mixto</span><span class="price">$11000</span><div class="qty" data-sku="shawarma_mixto" data-price="11000"></div></div>
+    <div class="card"><img src="https://i0.wp.com/shawarmaandalos.ca/wp-content/uploads/2024/01/Falafel-Sandwich.png?fit=1000%2C1000&ssl=1"><span class="name">Falafel (vegano)</span><span class="price">$9000</span><div class="qty" data-sku="shawarma_falafel" data-price="9000"></div></div>
+    <div class="card"><img src="https://st.depositphotos.com/27201292/53745/i/450/depositphotos_537459510-stock-photo-closeup-shawarma-white-table.jpg"><span class="name">Plato con papas fritas</span><span class="price">$15000</span><div class="qty" data-sku="shawarma_papas" data-price="15000"></div></div>
+  </div>
+
+  <!-- Fatay -->
+  <h2 class="cat-title">Fatay</h2>
+  <div class="grid">
+    <div class="card"><img src="https://www.parati.com.ar/wp-content/uploads/2024/09/Diseno-sin-titulo-25-749x561.jpg.webp"><span class="name">De carne</span><span class="price">$3000</span><div class="qty" data-sku="fatay_carne" data-price="3000"></div></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3ddzJ43rlhYNLOiaTqFXucDuq9d_hXf0YXqBbJQ2GLosYo9093PdQziNoFGFCLGuZb4&usqp=CAU"><span class="name">De pollo</span><span class="price">$3000</span><div class="qty" data-sku="fatay_pollo" data-price="3000"></div></div>
+    <div class="card"><img src="https://www.laitalianapastas.com/wp-content/uploads/2018/05/fatay-espinaca-laitaliana.jpg"><span class="name">Ricotta y verduras</span><span class="price">$3000</span><div class="qty" data-sku="fatay_verduras" data-price="3000"></div></div>
+  </div>
+
+  <!-- Lehmeyun -->
+  <h2 class="cat-title">Lehmeyun</h2>
+  <div class="grid">
+    <div class="card single"><img src="https://lamanchega.com.uy/repo/img/14lehmeyun_0.jpg" alt="Lehmeyun"><span class="name">De carne</span><span class="price">$4000</span><div class="qty" data-sku="lehmayun_carne" data-price="4000"></div></div>
+  </div>
+
+  <!-- Sarma -->
+  <h2 class="cat-title">Sarma</h2>
+  <div class="grid">
+    <div class="card single"><img src="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg" alt="Sarma"><span class="name">Hojas de parra y repollo</span><span class="price">$8000</span><div class="qty" data-sku="sarma" data-price="8000"></div></div>
+  </div>
+
+  <!-- Ensaladas -->
+  <h2 class="cat-title">Ensaladas</h2>
+  <div class="grid">
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8EFUqvaLKuhIF-8280v1yAM6wCJUwd77QQ&s"><span class="name">Tabule</span><span class="price">$5000</span><div class="qty" data-sku="tabule" data-price="5000"></div></div>
+    <div class="card"><img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/e9964c08-1177-4cb9-880a-185e1eeee576/Derivates/22085e12-5a3b-4b0b-bf0e-5ad1c9a05017.jpg"><span class="name">Hummus</span><span class="price">$4000</span><div class="qty" data-sku="hummus" data-price="4000"></div></div>
+  </div>
+
+  <!-- Postres -->
+  <h2 class="cat-title">Postres</h2>
+  <div class="grid">
+    <div class="card"><img src="https://pekis.net/sites/default/files/styles/325x325/public/2025-02/Traditional%20Baklava_0.jpg?itok=N1wuUC4G"><span class="name">Baklava</span><span class="price">$4000</span><div class="qty" data-sku="baklava" data-price="4000"></div></div>
+    <div class="card"><img src="https://elcajondelachampi.wordpress.com/wp-content/uploads/2020/06/gata.jpg?w=640"><span class="name">Gata</span><span class="price">$2000</span><div class="qty" data-sku="gata" data-price="2000"></div></div>
+    <div class="card"><img src="https://i.ytimg.com/vi/MDta8qSFql4/maxresdefault.jpg"><span class="name">Mrjnabun</span><span class="price">$3000</span><div class="qty" data-sku="mrjnabun" data-price="3000"></div></div>
+    <div class="card"><img src="https://i.ytimg.com/vi/p8kn2s1oIGM/hq720.jpg"><span class="name">Torta de miel</span><span class="price">$4000</span><div class="qty" data-sku="torta_miel" data-price="4000"></div></div>
+  </div>
+
+  <!-- Gaseosas -->
+  <h2 class="cat-title">Gaseosas</h2>
+  <div class="grid">
+    <div class="card"><img src="https://acdn-us.mitiendanube.com/stores/001/147/879/products/41-fffa51ddc298ea133d17381885452641-1024-1024.png"><span class="name">Coca-Cola 500cc</span><span class="price">$2000</span><div class="qty" data-sku="coca" data-price="2000"></div></div>
+    <div class="card"><img src="https://multicenter.vtexassets.com/arquivos/ids/304765/111686_Primary.jpg?v=638712553632100000"><span class="name">Fanta 500cc</span><span class="price">$2000</span><div class="qty" data-sku="fanta" data-price="2000"></div></div>
+    <div class="card"><img src="https://acdn-us.mitiendanube.com/stores/003/795/536/products/77918134201181-02c1892ab7b2181d5e15952575329430-1024-1024-7d9e54ab089ddab94e169902079956241-90c755834d7f058cb216990208444790-1024-1024.jpg"><span class="name">Pepsi 500cc</span><span class="price">$2000</span><div class="qty" data-sku="pepsi" data-price="2000"></div></div>
+  </div>
+</main>
+
+<!-- TOTAL BAR -->
+<div class="cart-bar">
+  <span><span class="cart-icon">🛒</span> Total: $<span id="total">0</span></span>
+  <button id="sendOrder">Finalizar pedido</button>
+</div>
+
+<script>
+  const phoneNumber = "541150360400";
+
+  document.querySelectorAll(".qty").forEach(el=>{
+    const minus=document.createElement("button");minus.textContent="-";
+    const plus=document.createElement("button");plus.textContent="+";
+    const input=document.createElement("input");input.type="number";input.value=0;input.min=0;
+    el.append(minus,input,plus);
+
+    const updateTotal=()=>{
+      let sum=0;
+      document.querySelectorAll(".qty").forEach(q=>{
+        sum+=q.querySelector("input").value*q.dataset.price;
+      });
+      document.getElementById("total").textContent=sum.toLocaleString("es-AR");
+    };
+
+    minus.onclick=()=>{if(input.value>0){input.value--;updateTotal()}}; 
+    plus.onclick=()=>{input.value++;updateTotal()};
+    input.oninput=updateTotal;
+  });
+
+  document.getElementById("sendOrder").onclick=()=>{
+    let order="*Pedido - Shawarma Margaryan*%0A%0A";
+    let total=0;
+    document.querySelectorAll(".qty").forEach(q=>{
+      const qty=+q.querySelector("input").value;
+      if(qty>0){
+        const name=q.parentElement.querySelector(".name").textContent;
+        const price=+q.dataset.price;
+        total+=qty*price;
+        order+=`- ${qty} x ${name} ($${price})%0A`;
+      }
+    });
+    order+=`%0A*Total: $${total.toLocaleString("es-AR")}*`;
+
+    if(total>0){
+      const url=`https://wa.me/${phoneNumber}?text=${order}`;
+      window.open(url,"_blank");
+    }else{
+      alert("Agregá productos antes de finalizar el pedido 😉");
+    }
+  };
+</script>
+</body>
+</html>
