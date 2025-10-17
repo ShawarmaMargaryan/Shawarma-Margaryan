@@ -1,3 +1,4 @@
+
 <html lang="es">
 <head>
 <meta charset="utf-8" />
@@ -124,47 +125,50 @@
   <!-- Shawarma -->
   <h2 class="cat-title">Shawarma</h2>
   <div class="grid">
-    <div class="card"><img src="https://thumbs.dreamstime.com/b/shawarma-de-ternera-en-un-fondo-oscuro-con-carne-vacuno-pan-pita-foto-del-men%C3%BA-255481305.jpg"><span class="name">De carne</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_carne" data-price="10000"></div></div>
-    <div class="card"><img src="https://www.durum.com.ar/wp-content/uploads/2019/09/L-Pollo-400G-Grande-e1570821714365.jpg"><span class="name">De pollo</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_pollo" data-price="10000"></div></div>
-    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkFvJ9mq8EBoIt1EfXnFw1SkLBaKXylaaEw&s"><span class="name">Mixto</span><span class="price">$11000</span><div class="qty" data-sku="shawarma_mixto" data-price="11000"></div></div>
-    <div class="card"><img src="https://i0.wp.com/shawarmaandalos.ca/wp-content/uploads/2024/01/Falafel-Sandwich.png?fit=1000%2C1000&ssl=1"><span class="name">Falafel (vegano)</span><span class="price">$9000</span><div class="qty" data-sku="shawarma_falafel" data-price="9000"></div></div>
-    <div class="card"><img src="https://st.depositphotos.com/27201292/53745/i/450/depositphotos_537459510-stock-photo-closeup-shawarma-white-table.jpg"><span class="name">Plato con papas fritas</span><span class="price">$15000</span><div class="qty" data-sku="shawarma_papas" data-price="15000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/a628411a-8718-4ff5-a3db-6f0f0e028dd5.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">De carne</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_carne" data-price="10000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/a7996d6e-0720-4003-b301-637923a32cd1.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">De pollo</span><span class="price">$10000</span><div class="qty" data-sku="shawarma_pollo" data-price="10000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/e0219a29-b62b-4807-9f21-6be2bfe3d91e.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Mixto</span><span class="price">$11000</span><div class="qty" data-sku="shawarma_mixto" data-price="11000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/70b86905-40c3-42b3-9828-182e77662c15.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Falafel (vegano)</span><span class="price">$9000</span><div class="qty" data-sku="shawarma_falafel" data-price="9000"></div></div>
+    <div class="card"><img src="https://lh3.googleusercontent.com/pw/AP1GczO06okzCYWNXqwGwh8XVzi98k1rlfux1cy8AZcIRg3_lbnczwYN38irrRjIO1PZ5t9hziJUxhF-rNdI6xag4TM_K1I-TStVwbbkQS2hg-kdn2bBgT1E1XLFb9eqWV935hfnQtx1A1wMLQa5vNxE5Azz=w913-h913-s-no-gm?authuser=0"><span class="name">Plato con papas fritas</span><span class="price">$15000</span><div class="qty" data-sku="shawarma_papas" data-price="15000"></div></div>
   </div>
 
+  <h2 class="cat-title">Falafel</h2>
+  <div class="grid">
+    <div class="card single"><img src="https://images.rappi.com.ar/products/859fc8e9-fb23-44ce-916c-0032acccac91.jpeg?e=webp&q=50&d=400x400.com/https://images.rappi.com.ar/products/859fc8e9-fb23-44ce-916c-0032acccac91.jpeg?e=webp&q=50&d=400x400" alt="Falafel"><span class="name">Falafel</span><span class="price">$3000</span><div class="qty" data-sku="Falafel" data-price="3000"></div></div>
+  </div>
   <!-- Fatay -->
   <h2 class="cat-title">Fatay</h2>
   <div class="grid">
-    <div class="card"><img src="https://www.parati.com.ar/wp-content/uploads/2024/09/Diseno-sin-titulo-25-749x561.jpg.webp"><span class="name">De carne</span><span class="price">$3000</span><div class="qty" data-sku="fatay_carne" data-price="3000"></div></div>
-    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3ddzJ43rlhYNLOiaTqFXucDuq9d_hXf0YXqBbJQ2GLosYo9093PdQziNoFGFCLGuZb4&usqp=CAU"><span class="name">De pollo</span><span class="price">$3000</span><div class="qty" data-sku="fatay_pollo" data-price="3000"></div></div>
-    <div class="card"><img src="https://www.laitalianapastas.com/wp-content/uploads/2018/05/fatay-espinaca-laitaliana.jpg"><span class="name">Ricotta y verduras</span><span class="price">$3000</span><div class="qty" data-sku="fatay_verduras" data-price="3000"></div></div>
+    <div class="card"><img src="https://images.rappi.com.ar/products/b4aa669a-b278-4cdd-af36-1d8dd5367ca7.jpeg?e=webp&q=50&d=400x400.com/https://images.rappi.com.ar/products/b4aa669a-b278-4cdd-af36-1d8dd5367ca7.jpeg?e=webp&q=50&d=400x400"><span class="name">De carne</span><span class="price">$3000</span><div class="qty" data-sku="fatay_carne" data-price="3000"></div></div>
+    <div class="card"><img src="https://images.rappi.com.ar/products/e7f56937-d0fc-47f5-99d7-f560882a0335.jpeg?e=webp&q=50&d=400x400.com/https://images.rappi.com.ar/products/e7f56937-d0fc-47f5-99d7-f560882a0335.jpeg?e=webp&q=50&d=400x400"><span class="name">De pollo</span><span class="price">$3000</span><div class="qty" data-sku="fatay_pollo" data-price="3000"></div></div>
   </div>
 
   <!-- Lehmeyun -->
   <h2 class="cat-title">Lehmeyun</h2>
   <div class="grid">
-    <div class="card single"><img src="https://lamanchega.com.uy/repo/img/14lehmeyun_0.jpg" alt="Lehmeyun"><span class="name">De carne</span><span class="price">$4000</span><div class="qty" data-sku="lehmayun_carne" data-price="4000"></div></div>
+    <div class="card single"><img src="https://lh3.googleusercontent.com/pw/AP1GczPqOWInTRMvMTk1f8DVsPGBgssg3matB3etPM-UkhBpWOYBRi_1kOwXVo8aQ7qQ0uVKUJSXFeF9HsHcOv7zhIqaF1SsplCuvvfUmmpoH7fpo82eDouYP94dK6_PgCK8YuGNQUnIzDbMWA8MoANMII3E=w913-h913-s-no-gm?authuser=0" alt="Lehmeyun"><span class="name">De carne</span><span class="price">$4000</span><div class="qty" data-sku="lehmayun_carne" data-price="4000"></div></div>
   </div>
 
   <!-- Sarma -->
   <h2 class="cat-title">Sarma</h2>
   <div class="grid">
-    <div class="card single"><img src="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg" alt="Sarma"><span class="name">Hojas de parra y repollo</span><span class="price">$8000</span><div class="qty" data-sku="sarma" data-price="8000"></div></div>
+    <div class="card single"><img src="https://lh3.googleusercontent.com/pw/AP1GczNMfGbZM0IQjVESELa2I4UwN6HmBkQUGD_6iRb4qEA6mLZkZJwdIm6PFRwYQX_D0_AGLQejKYLvEvy2Al2T5KJjT9KiKdB6ca_9xUgjPUYpQF4xqD602y9MiprZ2SoaaLXv8XjRQdvn6QIOMSOIjaji=w913-h913-s-no-gm?authuser=0" alt="Sarma"><span class="name">Hojas de parra y repollo</span><span class="price">$8000</span><div class="qty" data-sku="sarma" data-price="8000"></div></div>
   </div>
 
   <!-- Ensaladas -->
   <h2 class="cat-title">Ensaladas</h2>
   <div class="grid">
-    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8EFUqvaLKuhIF-8280v1yAM6wCJUwd77QQ&s"><span class="name">Tabule</span><span class="price">$5000</span><div class="qty" data-sku="tabule" data-price="5000"></div></div>
-    <div class="card"><img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/e9964c08-1177-4cb9-880a-185e1eeee576/Derivates/22085e12-5a3b-4b0b-bf0e-5ad1c9a05017.jpg"><span class="name">Hummus</span><span class="price">$4000</span><div class="qty" data-sku="hummus" data-price="4000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/22ff2b19-20fb-41cc-8ac9-1e9aafa7b07e.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Tabule</span><span class="price">$5000</span><div class="qty" data-sku="tabule" data-price="5000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/c5501aa3-2da0-406a-8599-ad216b3a325a.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Hummus</span><span class="price">$4000</span><div class="qty" data-sku="hummus" data-price="4000"></div></div>
   </div>
 
   <!-- Postres -->
   <h2 class="cat-title">Postres</h2>
   <div class="grid">
-    <div class="card"><img src="https://pekis.net/sites/default/files/styles/325x325/public/2025-02/Traditional%20Baklava_0.jpg?itok=N1wuUC4G"><span class="name">Baklava</span><span class="price">$4000</span><div class="qty" data-sku="baklava" data-price="4000"></div></div>
-    <div class="card"><img src="https://elcajondelachampi.wordpress.com/wp-content/uploads/2020/06/gata.jpg?w=640"><span class="name">Gata</span><span class="price">$2000</span><div class="qty" data-sku="gata" data-price="2000"></div></div>
-    <div class="card"><img src="https://i.ytimg.com/vi/MDta8qSFql4/maxresdefault.jpg"><span class="name">Mrjnabun</span><span class="price">$3000</span><div class="qty" data-sku="mrjnabun" data-price="3000"></div></div>
-    <div class="card"><img src="https://i.ytimg.com/vi/p8kn2s1oIGM/hq720.jpg"><span class="name">Torta de miel</span><span class="price">$4000</span><div class="qty" data-sku="torta_miel" data-price="4000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/fab93b6b-aeed-481d-8cf7-8cc5cc9b27c3.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Baklava</span><span class="price">$4000</span><div class="qty" data-sku="baklava" data-price="4000"></div></div>
+    <div class="card"><img src="https://lh3.googleusercontent.com/pw/AP1GczMbHuTWZSy59hDy23lRJVi-M96fPELpdaEc6vzr57ja4m99D2M2nUrNYWy8sqie2BeGiROgYmk75t4payNonhje38M5E6BPE0EfyOO6Xju04A1P_5lE9QzQ6PhPEMA54eLhUwzb_9peQX4crUNqawHc=w913-h913-s-no-gm?authuser=0"><span class="name">Gata</span><span class="price">$2000</span><div class="qty" data-sku="gata" data-price="2000"></div></div>
+    <div class="card"><img src="https://pedidosya.dhmedia.io/image/pedidosya/products/96464e6f-f230-485f-9dd0-df182652f9a8.jpeg?quality=90&width=1680&webp=1&dpi=1.5"><span class="name">Mrjnabun</span><span class="price">$3000</span><div class="qty" data-sku="mrjnabun" data-price="3000"></div></div>
+    <div class="card"><img src="https://lh3.googleusercontent.com/pw/AP1GczP0RgpBgRoHUICiSInASbiyMJJTab9-VQTbrXMvClCYktnh6pLEETO5iVXT5lTGF7JCBoHvX_IHpiwqksISdgbb7tUKKblNBriBBFKr9Xl4mT9GOaYsfbkpVoE1680sivR7qdqc_BmKIAXStk74yH5p=w913-h913-s-no-gm?authuser=0"><span class="name">Torta de miel</span><span class="price">$4000</span><div class="qty" data-sku="torta_miel" data-price="4000"></div></div>
   </div>
 
   <!-- Gaseosas -->
@@ -181,7 +185,6 @@
   <span><span class="cart-icon">🛒</span> Total: $<span id="total">0</span></span>
   <button id="sendOrder">Finalizar pedido</button>
 </div>
-
 <script>
   const phoneNumber = "541150360400";
 
@@ -216,15 +219,33 @@
         order+=`- ${qty} x ${name} ($${price})%0A`;
       }
     });
-    order+=`%0A*Total: $${total.toLocaleString("es-AR")}*`;
 
-    if(total>0){
-      const url=`https://wa.me/${phoneNumber}?text=${order}`;
-      window.open(url,"_blank");
-    }else{
-      alert("Agregá productos antes de finalizar el pedido 😉");
+    if(total === 0){
+      alert("Agregá productos antes de finalizar el pedido ");
+      return;
     }
+
+    // 🔸 Pedir dirección
+    const direccion = prompt(" Ingresá tu dirección de entrega:");
+    if(!direccion){
+      alert("Por favor, ingresá una dirección para continuar.");
+      return;
+    }
+
+    // 🔸 Preguntar método de pago
+    let metodo = prompt(" ¿Cómo vas a abonar? (Efectivo o Transferencia)").toLowerCase().trim();
+    if(metodo !== "efectivo" && metodo !== "transferencia"){
+      alert("Por favor, escribí 'efectivo' o 'transferencia'.");
+      return;
+    }
+
+    // 🔸 Agregar dirección y método de pago al mensaje
+    order+=`%0A*Total: $${total.toLocaleString("es-AR")}*`;
+    order+=`%0A%0A *Dirección:* ${direccion}`;
+    order+=`%0A *Pago:* ${metodo.charAt(0).toUpperCase() + metodo.slice(1)}`;
+
+    // 🔸 Enviar a WhatsApp
+    const url=`https://wa.me/${phoneNumber}?text=${order}`;
+    window.open(url,"_blank");
   };
 </script>
-</body>
-</html>
