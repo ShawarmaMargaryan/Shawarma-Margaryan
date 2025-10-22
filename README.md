@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
 <meta charset="utf-8" />
@@ -7,14 +6,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#fdfbf7; --pri:#b12b2b; --pri-dark:#911f1f;
-    --ink:#2b2b2b; --card:#fff; --mut:#666; --line:#eee;
+    --bg:#fffaf7; --pri:#b12b2b; --pri-dark:#911f1f;
+    --ink:#222; --card:#fff; --mut:#777; --line:#eee;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
     font-family:'Poppins',sans-serif;
-    background:var(--bg);color:var(--ink);
-    line-height:1.5;padding-bottom:80px;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.5;
+    padding-bottom:80px;
   }
 
   /* HEADER */
@@ -22,72 +23,73 @@
     background:var(--card);
     position:sticky;top:0;z-index:10;
     border-bottom:1px solid var(--line);
-    box-shadow:0 2px 6px rgba(0,0,0,.05);
+    box-shadow:0 1px 6px rgba(0,0,0,.05);
   }
-  .wrap{max-width:1100px;margin:auto;padding:16px}
-  .brand{display:flex;gap:14px;align-items:center}
-  .logo{width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+  .wrap{max-width:1100px;margin:auto;padding:14px}
+  .brand{display:flex;gap:12px;align-items:center}
+  .logo{width:54px;height:54px;border-radius:50%;overflow:hidden;flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,.08)}
   .logo img{width:100%;height:100%;object-fit:cover}
-  h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--pri);font-weight:700}
-  .sub{font-size:13px;color:var(--mut);margin-top:4px}
+  h1{margin:0;font-size:20px;color:var(--pri);font-weight:700}
+  .sub{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.3}
 
   /* CATEGORY TITLE */
   .cat-title {
-    margin-top:40px;
-    font-size:22px;
+    margin-top:28px;
+    font-size:19px;
     font-weight:700;
     color:var(--pri);
     border-bottom:2px solid var(--pri);
-    padding-bottom:6px;
+    padding-bottom:4px;
   }
 
   /* GRID */
   .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:22px;margin-top:20px;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:16px;margin-top:14px;
   }
 
   /* CARD */
   .card{
     background:var(--card);
-    border-radius:18px;
-    padding:18px;
-    display:flex;flex-direction:column;gap:14px;
-    box-shadow:0 4px 12px rgba(0,0,0,.06);
-    transition:.3s ease;
+    border-radius:16px;
+    padding:14px;
+    display:flex;flex-direction:column;gap:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    transition:.25s ease;
     border:1px solid var(--line);
     text-align:center;
   }
-  .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+  .card:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(0,0,0,.08)}
   .card img{
-    width:100%;border-radius:14px;max-height:180px;object-fit:cover;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    transition:.3s;
+    width:100%;
+    border-radius:12px;
+    max-height:140px;
+    object-fit:cover;
+    box-shadow:0 1px 6px rgba(0,0,0,.06);
   }
-  .card img:hover{transform:scale(1.03)}
-  .name{font-weight:600;font-size:16px}
-  .price{color:var(--pri);font-weight:600;font-size:15px}
+  .name{font-weight:600;font-size:15px;margin-top:4px}
+  .price{color:var(--pri);font-weight:700;font-size:15px}
 
   /* QTY */
-  .qty{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:6px}
+  .qty{display:flex;gap:6px;align-items:center;justify-content:center;margin-top:6px}
   .qty button{
     border:0;background:var(--pri);color:#fff;
-    border-radius:10px;padding:6px 12px;font-size:16px;cursor:pointer;
-    transition:.2s;font-weight:600;
+    border-radius:10px;width:34px;height:34px;
+    font-size:18px;cursor:pointer;transition:.2s;font-weight:700;
   }
   .qty button:hover{background:var(--pri-dark)}
   .qty input{
-    width:48px;text-align:center;border:1px solid #ddd;border-radius:10px;
+    width:46px;text-align:center;border:1px solid #ccc;border-radius:8px;
     padding:6px;font-size:15px;font-weight:600;
   }
 
   /* SPECIAL SINGLE ITEM */
   .card.single img {
-    max-height: 300px;
-    object-fit: contain;
+    max-height:200px;
+    object-fit:contain;
     background:#fafafa;
-    padding:10px;
+    padding:8px;
   }
 
   /* CART BAR */
@@ -95,19 +97,31 @@
     position:fixed;bottom:0;left:0;right:0;
     background:var(--pri);color:#fff;
     display:flex;justify-content:space-between;align-items:center;
-    padding:14px 20px;font-size:18px;font-weight:600;
+    padding:12px 18px;
+    font-size:17px;font-weight:600;
     box-shadow:0 -3px 12px rgba(0,0,0,.25);
   }
   .cart-bar span{display:flex;align-items:center;gap:8px}
   .cart-bar button{
     background:#fff;color:var(--pri);border:0;
-    padding:12px 20px;border-radius:12px;font-weight:700;
-    cursor:pointer;font-size:16px;transition:.3s;
+    padding:12px 18px;border-radius:12px;font-weight:700;
+    cursor:pointer;font-size:15px;transition:.3s;
   }
   .cart-bar button:hover{background:#f5f5f5;transform:scale(1.05)}
 
-  /* ICON */
-  .cart-icon{font-size:20px}
+  /* MOBILE TUNING */
+  @media (max-width:600px){
+    .wrap{padding:12px}
+    h1{font-size:18px}
+    .cat-title{font-size:18px;margin-top:22px}
+    .card{padding:12px;border-radius:14px}
+    .card img{max-height:130px}
+    .price{font-size:14px}
+    .qty button{width:32px;height:32px}
+    .qty input{width:42px}
+    .cart-bar{font-size:16px;padding:10px 14px}
+    .cart-bar button{padding:10px 16px;font-size:14px}
+  }
 </style>
 </head>
 <body>
@@ -116,7 +130,7 @@
     <div class="logo"><img src="https://images.rappi.com.ar/restaurants_logo/123-1738620610744.png" alt="Logo Shawarma Margaryan"></div>
     <div>
       <h1>SHAWARMA MARGARYAN</h1>
-      <div class="sub">Cocina Armenia y Medio Oriente · Lun a Sáb 11:00–22:30 · J.L. Borges 2307, Palermo · <b>1150360400</b></div>
+      <div class="sub">Cocina Armenia y Medio Oriente · Lun a Sáb 11–22:30 · Borges 2307, Palermo · <b>1150360400</b></div>
     </div>
   </div>
 </header>
@@ -180,11 +194,11 @@
   </div>
 </main>
 
-<!-- TOTAL BAR -->
 <div class="cart-bar">
   <span><span class="cart-icon">🛒</span> Total: $<span id="total">0</span></span>
   <button id="sendOrder">Finalizar pedido</button>
 </div>
+
 <script>
   const phoneNumber = "541150360400";
 
@@ -225,27 +239,25 @@
       return;
     }
 
-    // 🔸 Pedir dirección
-    const direccion = prompt(" Ingresá tu dirección de entrega:");
+    const direccion = prompt("Ingresá tu dirección de entrega:");
     if(!direccion){
       alert("Por favor, ingresá una dirección para continuar.");
       return;
     }
 
-    // 🔸 Preguntar método de pago
-    let metodo = prompt(" ¿Cómo vas a abonar? (Efectivo o Transferencia)").toLowerCase().trim();
+    let metodo = prompt("¿Cómo vas a abonar? (Efectivo o Transferencia)").toLowerCase().trim();
     if(metodo !== "efectivo" && metodo !== "transferencia"){
       alert("Por favor, escribí 'efectivo' o 'transferencia'.");
       return;
     }
 
-    // 🔸 Agregar dirección y método de pago al mensaje
     order+=`%0A*Total: $${total.toLocaleString("es-AR")}*`;
-    order+=`%0A%0A *Dirección:* ${direccion}`;
-    order+=`%0A *Pago:* ${metodo.charAt(0).toUpperCase() + metodo.slice(1)}`;
+    order+=`%0A%0A*Dirección:* ${direccion}`;
+    order+=`%0A*Pago:* ${metodo.charAt(0).toUpperCase() + metodo.slice(1)}`;
 
-    // 🔸 Enviar a WhatsApp
     const url=`https://wa.me/${phoneNumber}?text=${order}`;
     window.open(url,"_blank");
   };
 </script>
+</body>
+</html>
