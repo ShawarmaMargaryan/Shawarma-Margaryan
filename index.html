@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shawarma Margaryan | Cocina Armenia y de Medio Oriente</title>
+  <meta name="description"
+    content="Auténtica cocina armenia y de medio oriente en Palermo. Shawarma tradicional, combos con papas y gaseosa, fatay, sarma, baklava y más. Pedí online por WhatsApp." />
+
+  <!-- Tipografía moderna Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de Estilos Separada -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Barra de Anuncios Superior -->
+  <div class="top-notice">
+    <span>🇦🇲 Auténtica Cocina Armenia y de Medio Oriente</span>
+    <span>•</span>
+    <span>🛵 Delivery & Take Away</span>
+    <span>•</span>
+    <span class="badge-pill">Palermo, CABA</span>
+  </div>
+
+  <!-- Encabezado Principal / Hero -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo-container">
+          <img class="brand-logo" src="https://images.rappi.com.ar/restaurants_logo/123-1738620610744.png"
+            alt="Logo Shawarma Margaryan" width="80" height="80" />
+          <span class="status-dot" title="Abierto de Lun a Sáb de 11:00 a 22:30"></span>
+        </div>
+        <div class="brand-info">
+          <h1>SHAWARMA MARGARYAN</h1>
+          <p class="brand-subtitle">Cocina Armenia y De Medio Oriente</p>
+          <div class="header-badges">
+            <span class="badge-item">📍 J.L. Borges 2307, Palermo</span>
+            <span class="badge-item">🕒 Lun a Sáb: 11:00 – 22:30 hs</span>
+            <span class="badge-item">📞 11 5036-0400</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="https://wa.me/541150360400" target="_blank" rel="noopener" class="action-btn action-btn-whatsapp">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+          </svg>
+          WhatsApp Directo
+        </a>
+        <a href="https://maps.google.com/?q=J.L.+Borges+2307+Palermo+Buenos+Aires" target="_blank" rel="noopener"
+          class="action-btn action-btn-outline">
+          Ver Mapa
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra Fija: Categorías y Búsqueda -->
+  <nav class="sticky-nav-wrapper" aria-label="Navegación del menú">
+    <div class="container nav-controls">
+      <div class="categories-bar">
+        <a href="#cat-combos" class="cat-pill active">🔥 Combos</a>
+        <a href="#cat-shawarma" class="cat-pill">🌯 Shawarma</a>
+        <a href="#cat-fatay" class="cat-pill">🥟 Fatay</a>
+        <a href="#cat-lehmeyun" class="cat-pill">🍕 Lehmeyun</a>
+        <a href="#cat-sarma" class="cat-pill">🌿 Sarma</a>
+        <a href="#cat-ensaladas" class="cat-pill">🥗 Ensaladas</a>
+        <a href="#cat-postres" class="cat-pill">🍰 Postres</a>
+        <a href="#cat-gaseosas" class="cat-pill">🥤 Gaseosas</a>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="dishSearchInput" class="search-input" placeholder="Buscar plato, combo o bebida..."
+          aria-label="Buscar producto" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido Principal del Menú -->
+  <main class="container" id="menuMain">
+
+    <!-- Sin resultados en búsqueda -->
+    <div id="noSearchResults" class="no-results">
+      <h3>No encontramos resultados</h3>
+      <p style="color:#78716c; margin-top:4px;">Probá buscando con otro nombre o revisá nuestras categorías.</p>
+    </div>
+
+    <!-- SECCIÓN: COMBOS ESPECIALES -->
+    <section class="menu-section" id="cat-combos">
+      <div class="section-header">
+        <h2 class="section-title">🔥 Combos con Papas Fritas y Gaseosa</h2>
+        <span class="section-count">3 opciones completas</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Combo Shawarma de Carne + Papas + Gaseosa -->
+        <article class="dish-card featured-combo" data-sku="combo_shawarma_carne"
+          data-name="Combo Shawarma Carne + Papas + Gaseosa" data-price="18500" data-img="img/combo_shawarma.jpg"
+          data-category="Combos Shawarma"
+          data-desc="Shawarma tradicional de carne vacuna + papas fritas doradas y crocantes + gaseosa 500cc bien fría.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge combo">Super Combo ⭐</span>
+            <img class="dish-image" src="img/combo_shawarma.jpg"
+              alt="Combo Shawarma de carne con papas fritas y gaseosa" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Combo Shawarma de Carne</h3>
+              <p class="dish-desc">Shawarma de carne vacuna especiada + abundante porción de papas fritas crocantes +
+                gaseosa 500 cc a elección (Coca-Cola, Fanta o Pepsi).</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$19.999</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Combo Shawarma de Pollo + Papas + Gaseosa -->
+        <article class="dish-card featured-combo" data-sku="combo_shawarma_pollo"
+          data-name="Combo Shawarma Pollo + Papas + Gaseosa" data-price="18500" data-img="img/combo_pollo.jpg"
+          data-category="Combos Shawarma"
+          data-desc="Shawarma de pollo marinado + papas fritas doradas + gaseosa 500cc a elección.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge combo">Super Combo ⭐</span>
+            <img class="dish-image" src="img/combo_pollo.jpg" alt="Combo Shawarma de pollo con papas fritas y gaseosa"
+              loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Combo Shawarma de Pollo</h3>
+              <p class="dish-desc">Shawarma de pollo desmenuzado y especiado + papas fritas doradas y crocantes +
+                gaseosa 500 cc a elección.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$19.999</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Combo Shawarma Mixto + Papas + Gaseosa -->
+        <article class="dish-card featured-combo" data-sku="combo_shawarma_mixto"
+          data-name="Combo Shawarma Mixto + Papas + Gaseosa" data-price="19500" data-img="img/combo_shawarma.jpg"
+          data-category="Combos Shawarma"
+          data-desc="Shawarma mixto carne y pollo + papas fritas doradas + gaseosa 500cc a elección.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge popular">Especialidad</span>
+            <img class="dish-image" src="img/combo_shawarma.jpg" alt="Combo Shawarma mixto con papas fritas y gaseosa"
+              loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Combo Shawarma Mixto</h3>
+              <p class="dish-desc">Shawarma mixto (carne y pollo con salsa de la casa) + papas fritas crocantes +
+                gaseosa 500 cc a elección.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$20.999</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: SHAWARMA INDIVIDUAL -->
+    <section class="menu-section" id="cat-shawarma">
+      <div class="section-header">
+        <h2 class="section-title">🌯 Shawarma Individual</h2>
+        <span class="section-count">4 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- De carne -->
+        <article class="dish-card" data-sku="shawarma_carne" data-name="Shawarma de carne" data-price="14000"
+          data-img="img/shawarma_carne.jpg" data-category="Shawarma"
+          data-desc="Tierno vacuno marinado con especias tradicionales orientales, vegetales frescos y salsa en pan pita.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge popular">Más pedido</span>
+            <img class="dish-image" src="img/shawarma_carne.jpg" alt="Shawarma de carne" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">De carne</h3>
+              <p class="dish-desc">Tierno vacuno marinado con especias orientales, vegetales frescos y salsa en suave
+                pan pita tostado.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$14.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- De pollo -->
+        <article class="dish-card" data-sku="shawarma_pollo" data-name="Shawarma de pollo" data-price="14000"
+          data-img="img/shawarma_pollo.jpg" data-category="Shawarma"
+          data-desc="Pollo jugoso sazonado al estilo armenio, verduras frescas y salsa especial envuelto a la plancha.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image" src="img/shawarma_pollo.jpg" alt="Shawarma de pollo" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">De pollo</h3>
+              <p class="dish-desc">Pollo jugoso sazonado al estilo armenio, finas verduras y aderezo especial envuelto a
+                la plancha.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$14.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mixto -->
+        <article class="dish-card" data-sku="shawarma_mixto" data-name="Shawarma mixto" data-price="15000"
+          data-img="img/shawarma_mixto.jpg" data-category="Shawarma"
+          data-desc="La combinación perfecta de carne vacuna y pollo con condimentos de la casa.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge popular">Especialidad</span>
+            <img class="dish-image" src="img/shawarma_mixto.jpg" alt="Shawarma mixto" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Mixto</h3>
+              <p class="dish-desc">La combinación ideal de carne vacuna y pollo especiado con vegetales crujientes y
+                salsa.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$15.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Falafel (vegano) -->
+        <article class="dish-card" data-sku="shawarma_falafel" data-name="Falafel (vegano)" data-price="13000"
+          data-img="img/shawarma_falafel.jpg" data-category="Shawarma Vegano"
+          data-desc="Croquetas doradas de garbanzo con hierbas finas, ensalada fresca y tahini en pan pita.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge vegan">Vegano 🌱</span>
+            <img class="dish-image" src="img/shawarma_falafel.jpg" alt="Falafel vegano" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Falafel (vegano)</h3>
+              <p class="dish-desc">Croquetas doradas y crocantes de garbanzos con hierbas finas, vegetales frescos y
+                salsa tahini.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$13.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: FATAY -->
+    <section class="menu-section" id="cat-fatay">
+      <div class="section-header">
+        <h2 class="section-title">🥟 Fatay (Empanadas Árabes)</h2>
+        <span class="section-count">3 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Fatay De carne -->
+        <article class="dish-card" data-sku="fatay_carne" data-name="Fatay de carne" data-price="3500"
+          data-img="https://www.parati.com.ar/wp-content/uploads/2024/09/Diseno-sin-titulo-25-749x561.jpg.webp"
+          data-category="Fatay"
+          data-desc="Masa tradicional triangular con relleno de carne picada, cebolla, tomate, especias y un toque de limón.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge traditional">Clásico</span>
+            <img class="dish-image"
+              src="https://www.parati.com.ar/wp-content/uploads/2024/09/Diseno-sin-titulo-25-749x561.jpg.webp"
+              alt="Fatay de carne" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">De carne</h3>
+              <p class="dish-desc">Auténtica empanada árabe triangular con sabroso picadillo de carne, tomate, cebolla y
+                toque de limón.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.500</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fatay De pollo -->
+        <article class="dish-card" data-sku="fatay_pollo" data-name="Fatay de pollo" data-price="3500"
+          data-img="img/fatay_pollo.jpg" data-category="Fatay"
+          data-desc="Relleno suave de pollo desmenuzado con vegetales y condimentos aromáticos en masa casera.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image" src="img/fatay_pollo.jpg" alt="Fatay de pollo" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">De pollo</h3>
+              <p class="dish-desc">Suave pollo desmenuzado y especiado con vegetales salteados en delicada masa
+                horneada.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.500</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: LEHMEYUN -->
+    <section class="menu-section" id="cat-lehmeyun">
+      <div class="section-header">
+        <h2 class="section-title">🍕 Lehmeyun (Pizza Armenia)</h2>
+        <span class="section-count">1 variedad</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Lehmeyun De carne -->
+        <article class="dish-card" data-sku="lehmeyun_carne" data-name="Lehmeyun de carne" data-price="4500"
+          data-img="img/lehmeyun.jpg" data-category="Lehmeyun"
+          data-desc="Fina masa redonda crocante cubierta de carne molida sazonada, morrón, tomate, cebolla y perejil fresco.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge traditional">Tradicional</span>
+            <img class="dish-image" src="img/lehmeyun.jpg" alt="Lehmeyun de carne" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">De carne</h3>
+              <p class="dish-desc">Fina y crocante base de masa cubierta con picadillo de carne vacuna, morrón, tomate y
+                especias armenias.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$4.500</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: SARMA -->
+    <section class="menu-section" id="cat-sarma">
+      <div class="section-header">
+        <h2 class="section-title">🌿 Sarma (Niños Envueltos)</h2>
+        <span class="section-count">2 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Hojas de parras y repollo -->
+        <article class="dish-card" data-sku="sarma_tradicional" data-name="Sarma (Hojas de parras y repollo)"
+          data-price="11000"
+          data-img="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg"
+          data-category="Sarma"
+          data-desc="Exquisitas hojas de parra y de repollo tiernas rellenas de arroz y carne picada especiada a fuego lento.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge traditional">Receta Ancestral</span>
+            <img class="dish-image"
+              src="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg"
+              alt="Sarma hojas de parras y repollo" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Hojas de parras y repollo</h3>
+              <p class="dish-desc">Tiernas hojas de parra y hojas de repollo rellenas con arroz, carne picada y caldo
+                especiado.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$11.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sarma Vegano -->
+        <article class="dish-card" data-sku="sarma_vegano" data-name="Sarma Vegano" data-price="10000"
+          data-img="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg"
+          data-category="Sarma Vegano"
+          data-desc="Versión 100% vegetal rellena de arroz sazonado, cebolla, hierbas frescas, piñones y limón.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge vegan">Vegano 🌱</span>
+            <img class="dish-image"
+              src="https://cookingorgeous.com/wp-content/uploads/2022/01/yaprak-sarma-stuffed-grape-leaves-19-500x500.jpg"
+              alt="Sarma vegano" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Vegano</h3>
+              <p class="dish-desc">Hojas de parra rellenas exclusivamente con arroz seleccionado, hierbas aromáticas,
+                aceite de oliva y limón.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$10.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: ENSALADAS -->
+    <section class="menu-section" id="cat-ensaladas">
+      <div class="section-header">
+        <h2 class="section-title">🥗 Ensaladas y Entradas</h2>
+        <span class="section-count">3 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Falafel por unidad -->
+        <article class="dish-card" data-sku="falafel_unidad" data-name="Falafel por unidad" data-price="3000"
+          data-img="img/falafel_unidad.jpg" data-category="Entradas"
+          data-desc="Croqueta crujiente y dorada de garbanzos con hierbas finas y salsa tahini casera.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge vegan">Vegano 🌱</span>
+            <img class="dish-image" src="img/falafel_unidad.jpg" alt="Falafel por unidad" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Falafel (por unidad)</h3>
+              <p class="dish-desc">Croqueta dorada y crujiente de garbanzos seleccionados con especias orientales y
+                salsa tahini.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tabule -->
+        <article class="dish-card" data-sku="tabule" data-name="Tabule" data-price="6000"
+          data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8EFUqvaLKuhIF-8280v1yAM6wCJUwd77QQ&s"
+          data-category="Ensaladas"
+          data-desc="Refrescante ensalada de trigo burgol, abundante perejil fresco picado, tomate, menta y limón.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge vegan">Fresco & Vegano 🌱</span>
+            <img class="dish-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8EFUqvaLKuhIF-8280v1yAM6wCJUwd77QQ&s"
+              alt="Ensalada Tabule" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Tabule</h3>
+              <p class="dish-desc">Fresca combinación de trigo burgol fino, perejil picado, tomate en cubitos, menta,
+                aceite de oliva y limón.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$6.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hummus -->
+        <article class="dish-card" data-sku="hummus" data-name="Hummus" data-price="5000"
+          data-img="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/e9964c08-1177-4cb9-880a-185e1eeee576/Derivates/22085e12-5a3b-4b0b-bf0e-5ad1c9a05017.jpg"
+          data-category="Ensaladas"
+          data-desc="Clásico puré suave y sedoso de garbanzos con pasta de sésamo (tahini), aceite de oliva y pimentón.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge vegan">Vegano 🌱</span>
+            <img class="dish-image"
+              src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/e9964c08-1177-4cb9-880a-185e1eeee576/Derivates/22085e12-5a3b-4b0b-bf0e-5ad1c9a05017.jpg"
+              alt="Hummus tradicional" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Hummus</h3>
+              <p class="dish-desc">Cremoso puré de garbanzos seleccionado con pasta de sésamo tahini, oliva virgen extra
+                y pimentón.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$5.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: POSTRES -->
+    <section class="menu-section" id="cat-postres">
+      <div class="section-header">
+        <h2 class="section-title">🍰 Postres Típicos</h2>
+        <span class="section-count">4 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Baklava -->
+        <article class="dish-card" data-sku="baklava" data-name="Baklava" data-price="5000"
+          data-img="img/baklava_new.jpg" data-category="Postres"
+          data-desc="Finas capas de masa filo crujiente rellenas de nueces picadas y bañadas en almíbar aromático.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge popular">Imperdible</span>
+            <img class="dish-image" src="img/baklava_new.jpg" alt="Baklava tradicional con nuez" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Baklava</h3>
+              <p class="dish-desc">Crujientes capas de masa filo dorada rellenas de nueces seleccionadas y perfumadas
+                con almíbar artesanal.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$5.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gata -->
+        <article class="dish-card" data-sku="gata" data-name="Gata" data-price="2500"
+          data-img="https://elcajondelachampi.wordpress.com/wp-content/uploads/2020/06/gata.jpg?w=640"
+          data-category="Postres"
+          data-desc="Pan dulce tradicional armenio con relleno suave y mantecoso con aroma a vainilla.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image"
+              src="https://elcajondelachampi.wordpress.com/wp-content/uploads/2020/06/gata.jpg?w=640"
+              alt="Gata tradicional armenia" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Gata</h3>
+              <p class="dish-desc">Masa dulce hojaldrada tradicional armenia con un suave y exquisito relleno de manteca
+                y azúcar aromatizado.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$2.500</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mrjnabun -->
+        <article class="dish-card" data-sku="mrjnabun" data-name="Mrjnabun" data-price="4000"
+          data-img="https://i.ytimg.com/vi/MDta8qSFql4/maxresdefault.jpg" data-category="Postres"
+          data-desc="Torta tradicional llamada nido de hormigas, crocantes trocitos de masa unidos con dulce de leche o miel.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image" src="https://i.ytimg.com/vi/MDta8qSFql4/maxresdefault.jpg" alt="Postre Mrjnabun"
+              loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Mrjnabun</h3>
+              <p class="dish-desc">Postre armenio emblemático con trocitos de masa horneada enlazados en suave dulce y
+                nueces.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$4.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Torta de miel -->
+        <article class="dish-card" data-sku="torta_miel" data-name="Torta de miel" data-price="5000"
+          data-img="https://i.ytimg.com/vi/p8kn2s1oIGM/hq720.jpg" data-category="Postres"
+          data-desc="Capas finas y delicadas de bizcochuelo a base de pura miel intercaladas con crema suave.">
+          <div class="dish-image-wrapper">
+            <span class="tag-badge popular">Favorito</span>
+            <img class="dish-image" src="https://i.ytimg.com/vi/p8kn2s1oIGM/hq720.jpg" alt="Torta de miel armenia"
+              loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Torta de miel</h3>
+              <p class="dish-desc">Elegantes capas finas horneadas con miel pura, intercaladas con crema aterciopelada y
+                cobertura tostada.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$5.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: GASEOSAS -->
+    <section class="menu-section" id="cat-gaseosas">
+      <div class="section-header">
+        <h2 class="section-title">🥤 Gaseosas y Bebidas</h2>
+        <span class="section-count">3 variedades</span>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Coca-Cola 500cc -->
+        <article class="dish-card" data-sku="coca_500" data-name="Coca-Cola 500 cc" data-price="3000"
+          data-img="https://acdn-us.mitiendanube.com/stores/001/147/879/products/41-fffa51ddc298ea133d17381885452641-1024-1024.png"
+          data-category="Gaseosas" data-desc="Gaseosa Coca-Cola botella personal de 500cc bien fría.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image"
+              src="https://acdn-us.mitiendanube.com/stores/001/147/879/products/41-fffa51ddc298ea133d17381885452641-1024-1024.png"
+              alt="Coca-Cola 500 cc" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Coca-Cola 500 cc</h3>
+              <p class="dish-desc">Botella individual de 500 cc, entregada bien fría.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fanta 500cc -->
+        <article class="dish-card" data-sku="fanta_500" data-name="Fanta 500 cc" data-price="3000"
+          data-img="https://multicenter.vtexassets.com/arquivos/ids/304765/111686_Primary.jpg?v=638712553632100000"
+          data-category="Gaseosas" data-desc="Gaseosa Fanta sabor naranja botella personal de 500cc bien fría.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image"
+              src="https://multicenter.vtexassets.com/arquivos/ids/304765/111686_Primary.jpg?v=638712553632100000"
+              alt="Fanta 500 cc" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Fanta 500 cc</h3>
+              <p class="dish-desc">Botella individual de 500 cc sabor naranja, servida bien fría.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pepsi 500cc -->
+        <article class="dish-card" data-sku="pepsi_500" data-name="Pepsi 500 cc" data-price="3000"
+          data-img="https://acdn-us.mitiendanube.com/stores/003/795/536/products/77918134201181-02c1892ab7b2181d5e15952575329430-1024-1024-7d9e54ab089ddab94e169902079956241-90c755834d7f058cb216990208444790-1024-1024.jpg"
+          data-category="Gaseosas" data-desc="Gaseosa Pepsi botella personal de 500cc bien fría.">
+          <div class="dish-image-wrapper">
+            <img class="dish-image"
+              src="https://acdn-us.mitiendanube.com/stores/003/795/536/products/77918134201181-02c1892ab7b2181d5e15952575329430-1024-1024-7d9e54ab089ddab94e169902079956241-90c755834d7f058cb216990208444790-1024-1024.jpg"
+              alt="Pepsi 500 cc" loading="lazy" />
+          </div>
+          <div class="dish-content">
+            <div class="dish-header">
+              <h3 class="dish-name">Pepsi 500 cc</h3>
+              <p class="dish-desc">Botella individual de 500 cc, entregada bien fría.</p>
+            </div>
+            <div class="dish-footer">
+              <div class="price-wrapper">
+                <span class="dish-price">$3.000</span>
+              </div>
+              <div>
+                <button type="button" class="btn-add-initial">+ Agregar</button>
+                <div class="qty-controller" style="display:none;">
+                  <button type="button" class="qty-btn qty-btn-minus" aria-label="Quitar uno">−</button>
+                  <span class="qty-display">0</span>
+                  <button type="button" class="qty-btn qty-btn-plus" aria-label="Agregar uno">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Barra Flotante de Carrito / Total -->
+  <aside class="floating-cart-bar" id="floatingCartBar" aria-label="Barra de carrito activo">
+    <div class="cart-summary">
+      <div class="cart-badge-count" id="cartTotalCount">0</div>
+      <div class="cart-text-details">
+        <span class="cart-label">Tu Pedido</span>
+        <span class="cart-total-amount" id="cartTotalAmount">$0</span>
+      </div>
+    </div>
+    <button type="button" class="btn-view-order" id="btnOpenCart">
+      Ver Pedido
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </button>
+  </aside>
+
+  <!-- Modal / Hoja de Checkout y Finalización de Pedido -->
+  <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="checkout-sheet">
+      <div class="sheet-header">
+        <h2 class="sheet-title" id="modalTitle">
+          🛒 Confirmar Pedido
+        </h2>
+        <button type="button" class="btn-close-sheet" id="btnCloseSheet" aria-label="Cerrar ventana">✕</button>
+      </div>
+
+      <div class="sheet-body">
+        <!-- Lista de Productos en el Carrito -->
+        <div>
+          <h3 class="checkout-section-title">Productos seleccionados</h3>
+          <div class="order-items-list" id="orderItemsList">
+            <!-- Renderizado dinámicamente con JS -->
+          </div>
+        </div>
+
+        <!-- Tipo de Entrega -->
+        <div>
+          <h3 class="checkout-section-title">Forma de entrega</h3>
+          <div class="pill-selector">
+            <button type="button" class="pill-option delivery-opt selected" data-value="takeaway">
+              <span>🏪</span> Retiro en el local
+            </button>
+            <button type="button" class="pill-option delivery-opt" data-value="delivery">
+              <span>🛵</span> Envío a domicilio
+            </button>
+          </div>
+        </div>
+
+        <!-- Dirección (sólo si es envío) -->
+        <div class="form-group" id="addressGroup" style="display:none;">
+          <label for="customerAddress" class="form-label">Dirección de entrega (calle, altura, depto):</label>
+          <input type="text" id="customerAddress" class="form-input" placeholder="Ej: Av. Santa Fe 3400, 3° B" />
+        </div>
+
+        <!-- Datos del Cliente -->
+        <div class="form-group">
+          <label for="customerName" class="form-label">Tu nombre:</label>
+          <input type="text" id="customerName" class="form-input"
+            placeholder="¿A nombre de quién registramos el pedido?" />
+        </div>
+
+        <!-- Forma de Pago (Efectivo / Transferencia) -->
+        <div>
+          <h3 class="checkout-section-title">Forma de pago</h3>
+          <div class="pill-selector">
+            <button type="button" class="pill-option payment-opt selected" data-value="cash">
+              <span>💵</span> Efectivo
+            </button>
+            <button type="button" class="pill-option payment-opt" data-value="transfer">
+              <span>🏦</span> Transferencia
+            </button>
+          </div>
+        </div>
+
+        <!-- Aclaraciones adicionales -->
+        <div class="form-group">
+          <label for="customerNotes" class="form-label">Aclaraciones o notas para la cocina (opcional):</label>
+          <input type="text" id="customerNotes" class="form-input"
+            placeholder="Ej: gaseosa Coca Zero, sin cebolla, salsa picante, etc." />
+        </div>
+
+        <!-- Resumen de Costos -->
+        <div class="summary-box">
+          <div class="summary-row total-final">
+            <span>Total a pagar:</span>
+            <span id="summaryFinalTotal">$0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <button type="button" class="btn-send-whatsapp" id="btnSendWhatsapp">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+          </svg>
+          Enviar Pedido por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-title">SHAWARMA MARGARYAN</h3>
+        <p class="footer-desc">El auténtico sabor de la cocina tradicional armenia y de Medio Oriente en el corazón de
+          Palermo. Elaboración artesanal con los mejores ingredientes.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Horarios de Atención</h4>
+        <ul class="footer-list">
+          <li>📅 Lunes a Sábado</li>
+          <li>⏰ 11:00 a 22:30 hs</li>
+          <li>🚫 Domingos cerrado</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contacto y Ubicación</h4>
+        <ul class="footer-list">
+          <li>📍 <a href="https://maps.google.com/?q=J.L.+Borges+2307+Palermo+Buenos+Aires" target="_blank"
+              rel="noopener">J.L. Borges 2307, Palermo</a></li>
+          <li>📱 <a href="https://wa.me/541150360400" target="_blank" rel="noopener">11 5036-0400</a></li>
+          <li>💵 Medios de pago: Efectivo y Transferencia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Shawarma Margaryan · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script Externo -->
+  <script src="app.js"></script>
+</body>
+
+</html>
